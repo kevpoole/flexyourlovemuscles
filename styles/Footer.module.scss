@@ -1,0 +1,12 @@
+@use "mixins";
+
+.body{
+    @include mixins.flex-center;
+    justify-content: space-evenly;
+    min-height: 10vh;
+    position: fixed;
+    color: #fff;
+    background-color: #72445c88;
+    bottom: 0;
+    width: 100%;
+}

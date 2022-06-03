@@ -1,0 +1,22 @@
+.body{
+    display: flex;
+    
+  &::before {
+    content: "";
+    display: block;
+    position: fixed;
+    filter: brightness(60%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background: url(../public/lightbox.webp) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+
+}

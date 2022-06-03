@@ -1,0 +1,12 @@
+@use "mixins";
+
+.main {
+  @include mixins.flex-center;
+
+  @include mixins.mobile{
+    padding: 2rem;
+    padding-top: 15vh;
+  }
+}
+
+
