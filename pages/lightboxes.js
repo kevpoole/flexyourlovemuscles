@@ -5,7 +5,7 @@ const Lightboxes = () => {
     <div className={styles.body}>
       <h1>Lightboxes For Sale</h1>
       <a href="https://matthewsheltonart.wixsite.com/mysite">
-        <button className={styles.btn}>Start Shoppin'</button>
+        <button className={styles.btn}>Start Shoppin</button>
       </a>
     </div>
   );
