@@ -6,7 +6,7 @@ import Link from "next/link";
 const Layout = ({ children }) => {
   return (
     <>
-      <video className={styles.video} autoPlay loop muted>
+      <video className={styles.video} autoPlay loop muted playsinline>
         <source src="../clip.webm" type="video/webm" />
       </video>
       <div className={styles.body}>
