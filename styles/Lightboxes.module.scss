@@ -1,5 +1,9 @@
+@use "mixins";
 .body{
-    display: flex;
+    @include mixins.flex-center;
+    flex-direction: column;
+    color: #fff;
+    min-height: 100vh;
     
   &::before {
     content: "";
@@ -19,4 +23,15 @@
     
   }
 
+}
+
+.btn{
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  outline: none;
+  border: 2px solid #640964;
+  border-radius: 10px;
+  background-color: #634263;
+  color: #fff;
+  cursor: pointer;
 }

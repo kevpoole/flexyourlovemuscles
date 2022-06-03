@@ -1,23 +1,16 @@
 @use "mixins";
 
-// .header{
-//     display: flex;
-//     align-items: center;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     // padding: 2rem 2rem;
-//     opacity: .9;
-//     color: #2e1111;
-//     background: #abaaaaa9;
-//     position: fixed;
-//        width: 30%;
-//        height: 30vh;
-//        z-index: 2;
+.body{
+  position: absolute;
+  left: 0;
+  min-height: 100vh;
+  
+  @include mixins.mobile{
+    position: relative;
+  }
 
-//        @include mixins.mobile{
-//             display: none;
-//        }
-// }
+}
+
 
 .mobileHeader {
   display: none;
@@ -33,17 +26,18 @@
     padding-left: 2rem;
     padding-right: 2rem;
     position: fixed;
+    top: 0;
     z-index: 7;
+    cursor: pointer;
+    
   }
 }
 
 .logo {
   @include mixins.flex-center;
-  width: 30vw;
-  padding: 0.5rem 1rem;
-  margin-left: 2rem;
   color: #fff;
   cursor: pointer;
+  position: fixed;
 
   @include mixins.mobile{
    display: none;
